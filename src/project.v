@@ -69,7 +69,7 @@ module tt_um_array_mult (
 	full_adder fa11 (.a(m3q3), .b(carry_adders_2[3]), .cin(carry_adders_3[2]), .sum(p[6]), .cout(p[7]));
 
 
-  assign ui_out = p;
+  assign uo_out = p;
 
   assign uio_out = 0;
   assign uio_oe  = 0;
