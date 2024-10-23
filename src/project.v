@@ -80,13 +80,13 @@ module tt_um_array_mult (
 endmodule
 
 module full_adder (
-	input wire a,
+	input wire x,
 	input wire b,
 	input wire cin,
 	output wire sum,
 	output wire cout
 );
 
-	assign sum = a ^ b ^ cin;
-	assign cout = (a & b) | (a & cin) | (b & cin);
+	assign sum = x ^ b ^ cin;
+	assign cout = (x & b) | (x & cin) | (b & cin);
 endmodule
